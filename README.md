@@ -31,17 +31,17 @@ Program ini merupakan aplikasi sederhana berbasis konsol untuk mencatat data mah
    - Nilai akhir dihitung otomatis dengan rumus:
                  Nilai Akhir=(Tugas×0.3)+(UTS×0.35)+(UAS×0.35)
 2. Penyimpanan Data:
-   - Data yang dimasukkan akan disimpan dalam daftar (list) dengan struktur berupa dictionary untuk setiap mahasiswa.
+   - Data yang dimasukkan akan disimpan dalam daftar (```list```) dengan struktur berupa dictionary untuk setiap mahasiswa.
 3. Tampilan Data:
    - Setelah input selesai, semua data ditampilkan dalam bentuk tabel dengan kolom berisi nomor, nama, NIM, nilai tugas, UTS, UAS, dan nilai akhir.
 4. Pilihan Berhenti:
-   - Pengguna dapat memilih untuk menambah data baru atau menghentikan program dengan mengetik y (ya) atau t (tidak).
+   - Pengguna dapat memilih untuk menambah data baru atau menghentikan program dengan mengetik ```y``` (ya) atau ```t ```(tidak).
 
 ### Struktur Kode:
 1. Inisialisasi List Data Mahasiswa:
-   - data_mahasiswa = [] digunakan untuk menyimpan seluruh data mahasiswa yang dimasukkan.
+   - ```data_mahasiswa = []``` digunakan untuk menyimpan seluruh data mahasiswa yang dimasukkan.
 2. Pengumpulan Data:
-   - Program berjalan dalam loop while True untuk memungkinkan input data secara berulang.
+   - Program berjalan dalam loop ```while True``` untuk memungkinkan input data secara berulang.
    - Input data mencakup nama, NIM, nilai tugas, UTS, dan UAS.
 3. Perhitungan Nilai Akhir:
    - Nilai akhir dihitung menggunakan formula yang memberikan bobot:
@@ -49,9 +49,9 @@ Program ini merupakan aplikasi sederhana berbasis konsol untuk mencatat data mah
    - 35% untuk nilai UTS.
    - 35% untuk nilai UAS.
 4. Menambah Data ke List:
-   - Setiap data mahasiswa ditambahkan ke dalam list data_mahasiswa sebagai dictionary menggunakan metode append.
+   - Setiap data mahasiswa ditambahkan ke dalam list ```data_mahasiswa``` sebagai dictionary menggunakan metode ```append```.
 5. Tampilan Akhir:
-   - Setelah loop selesai, data ditampilkan dalam format tabel menggunakan print dengan lebar kolom yang disesuaikan agar lebih rapi.
+   - Setelah loop selesai, data ditampilkan dalam format tabel menggunakan ```print``` dengan lebar kolom yang disesuaikan agar lebih rapi.
 
 ## Contoh Kode
 ```python
@@ -98,4 +98,4 @@ for i, mhs in enumerate(data_mahasiswa, start=1):
 
 ## Catatan:
 - Format tabel disesuaikan agar data lebih mudah dibaca.
-- Nilai akhir ditampilkan dengan dua angka desimal menggunakan format(nilai_akhir, '.2f').
+- Nilai akhir ditampilkan dengan dua angka desimal menggunakan ```format(nilai_akhir, '.2f')```.
